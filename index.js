@@ -1,25 +1,7 @@
-/* Example Challenge
- * Print out "hello world" in the console
- *
- * Steps:
- * 1. Use `console.log` to print out "hello world"
- *
- * Example Output: "hello world"
- */
 
-console.log('hello world')
+ var challenge_count = 8
+ console.log(challenge_count)
 
-/* Challenge #1
- * Create a variable and print the value
- *
- * Steps:
- * 1. Create a variable and assign it any value
- * 2. Use `console.log` to print out your variable
- *
- * Example Output: n/a
- */
-
-// TODO: ADD CODE HERE
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -33,7 +15,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+var firstName = 'Jon'
+var lastName = 'Rezentes'
+console.log(`${firstName} ${lastName}`)
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -45,7 +29,10 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
-
+var price = 5.55
+var quantity = 7
+var total = price * quantity
+console.log(total)
 // TODO: ADD CODE HERE
 
 /* Challenge #4
@@ -61,7 +48,13 @@ console.log('hello world')
  *
  * Example Output: "Aww! It's not sunny outside"
  */
-
+var weather = "Rainy"
+var message;
+if (weather === "Sunny"){
+  console.log("Yay! It's sunny outside")
+}else{
+  console.log("Aww! It's not sunny outside")
+}
 // TODO: ADD CODE HERE
 
 /* Challenge #5
@@ -74,7 +67,10 @@ console.log('hello world')
  *
  * Example Output: "I called a function!"
  */
-
+function myFunction(random_string){
+return console.log(random_string)
+}
+myFunction("I called a function")
 // TODO: ADD CODE HERE
 
 /* Challenge #6
@@ -87,7 +83,10 @@ console.log('hello world')
  *
  * Example Output: "I called an arrow function!"
  */
-
+let myArrowFunction = random_string => {
+  return console.log(random_string);
+}
+  myFunction("I called arrow function")
 // TODO: ADD CODE HERE
 
 /* Challenge #7
@@ -101,7 +100,10 @@ console.log('hello world')
  *
  * Example Output: "WHY AM I SCREAMING"
  */
-
+function stringToUpper(str){
+  return console.log(str.toUpperCase());
+}
+stringToUpper('yes')
 // TODO: ADD CODE HERE
 
 /* Challenge #8
@@ -120,3 +122,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+function multiplyByTwo(number){
+  return number*2
+}
+
+const num1 = multiplyByTwo(1)
+var num2 = multiplyByTwo(5)
+var num3 = multiplyByTwo(10)
+console.log(num1, num2, num3)

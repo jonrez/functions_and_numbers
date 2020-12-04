@@ -29,9 +29,9 @@ console.log(`${firstName} ${lastName}`)
  *
  * Example Output: "$49.90"
  */
-var price = 5.55
+var price = 5.3
 var quantity = 7
-var total = price * quantity
+var total = `$${(price * quantity).toFixed(2)}`
 console.log(total)
 // TODO: ADD CODE HERE
 
@@ -51,10 +51,11 @@ console.log(total)
 var weather = "Rainy"
 var message;
 if (weather === "Sunny"){
-  console.log("Yay! It's sunny outside")
+  message = "Yay! It's sunny outside"
 }else{
-  console.log("Aww! It's not sunny outside")
+  message = "Aww! It's not sunny outside"
 }
+console.log(message)
 // TODO: ADD CODE HERE
 
 /* Challenge #5
@@ -68,7 +69,7 @@ if (weather === "Sunny"){
  * Example Output: "I called a function!"
  */
 function myFunction(random_string){
-return console.log(random_string)
+  console.log(random_string)
 }
 myFunction("I called a function")
 // TODO: ADD CODE HERE
@@ -101,7 +102,7 @@ let myArrowFunction = random_string => {
  * Example Output: "WHY AM I SCREAMING"
  */
 function stringToUpper(str){
-  return console.log(str.toUpperCase());
+  console.log(str.toUpperCase());
 }
 stringToUpper('yes')
 // TODO: ADD CODE HERE
